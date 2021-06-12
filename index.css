@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+.attribution {
+    padding-top: 18px;
+    text-align: center;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(229, 23%, 23%);
+    width: 100%;
+    height: 100%;
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    border-radius: 15px;
+    margin: 100px 80px 0px 80px;
+    text-align: center;
+    background-color: white;
+    padding: 0px;
+}
+
+.header {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    padding-bottom: 50px;
+}
+
+.body .profile-img {
+    position: absolute;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    top: 22.8%;
+    width: 25%;
+    border: 5px solid white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.body .name {
+    font-weight: 700;
+}
+
+.body {
+    line-height: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.body .name,
+.age {
+    font-size: 22px;
+    display: inline;
+}
+
+.body .city {
+    padding-top: 5px;
+    font-size: 19px;
+}
+
+.body .city,
+.age {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 20px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+li {
+    margin-right: 40px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+span {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 5px;
+    letter-spacing: 0px;
+}
+
+hr {
+    color: hsl(0, 0%, 59%);
+}
+
+.circles .c1,
+.circles .c2 {
+    position: fixed;
+}
+
+.circles .c1 {
+    top: -500px;
+    left: -650px;
+}
+
+.circles .c2 {
+    bottom: -650px;
+    right: -600px;
+}
+
+@media (min-width: 992px) {
+    body {
+        height: 100vh;
+        align-items: center;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .container {
+        position: absolute;
+        border-radius: 15px;
+        margin: 50% auto;
+        text-align: center;
+        background-color: white;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+}
